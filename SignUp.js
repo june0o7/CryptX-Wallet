@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, StatusBar, TextInput, Button, TouchableOpacity, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, TextInput, Button, TouchableOpacity, TouchableHighlight, } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import firebase from 'firebase/compat/app';
 import app from './firebaseConfig';
@@ -7,17 +7,18 @@ import { createUserWithEmailAndPassword ,getAuth,  } from 'firebase/auth';
 import { initializeApp ,} from 'firebase/app';
 import { collection, Firestore, addDoc, getFirestore , setDoc,doc} from 'firebase/firestore';
 import { LinearGradient } from 'expo-linear-gradient';
-
+import { DateTimePicker } from '@react-native-community/datetimepicker';
 
 
 
 
 function SignUp(props) {
-    
-    
+
+
+ 
     const auth = getAuth(app);
     const [pressed, setPressed]= useState(false);
-  
+    const [DOB, setDOB]= useState('');
     const [pressed2, setPressed2]= useState(false);
     const [address, setAddress]= useState('');
     const [email, setEmail] =useState('');
@@ -39,10 +40,10 @@ function SignUp(props) {
       style={styles.background}>
   
             <Text style={styles.heading}>
-              CoDARcraft
+            CryptoNest
             </Text>
             <Text style={styles.heading2}>
-              Making your conspiracies real
+            Safe, Fast, and Ready for Every Transaction
             </Text>
     
     
@@ -65,7 +66,11 @@ function SignUp(props) {
     <TextInput placeholder= 'Enter Address' value={address} onChangeText={setAddress} placeholderTextcolor='#a2a2a2' style= {[styles.usernaname, {backgroundColor: '#ffc400', borderWidth:2, borderColor:'black'}]}>
     </TextInput>
     
-    
+    <TextInput placeholder='Date of Birth' value={DOB} onChangeText={setDOB}  placeholderTextColor= '#a2a2a2' style= {[styles.usernaname, {backgroundColor: 'white', borderWidth:2, borderColor:'black'}]} ></TextInput>
+       
+
+
+     
           <TouchableHighlight 
           onPressIn={()=>setPressed2(true)}
           onPressOut={()=>setPressed2(false)}
@@ -115,6 +120,8 @@ function SignUp(props) {
          
             <Text style={styles.heading2}>Forgot Password ?</Text>
           </TouchableOpacity>
+
+          <Text style={{color:'#2f2f2d', fontWeight:'bold'}}>CoDARcraft</Text>
             
         </LinearGradient>
        
@@ -158,7 +165,7 @@ heading2:{
 },
 usernaname: {
         width: '80%',
-        height: 60,
+        height: 50,
         borderColor: 'dodgerblue',
         borderWidth: 2,
         borderRadius: 10,
