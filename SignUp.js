@@ -19,10 +19,11 @@ function SignUp(props) {
     const [pressed, setPressed]= useState(false);
   
     const [pressed2, setPressed2]= useState(false);
-    
+    const [address, setAddress]= useState('');
     const [email, setEmail] =useState('');
     const [password, setPassword] =useState('');
     const [username, setUsername] =useState('');
+    const [phNo,setphNo]=useState('');
     
     const db=getFirestore(app);
     const collectionRef= collection(db, "users");
@@ -60,7 +61,9 @@ function SignUp(props) {
     
           
     </TextInput>
-    
+    <TextInput placeholder='Enter Phone Number' value={phNo} onChangeText={setphNo}placeholderTextColor='#a2a2a2' style={styles.usernaname}></TextInput>
+    <TextInput placeholder= 'Enter Address' value={address} onChangeText={setAddress} placeholderTextcolor='#a2a2a2' style= {[styles.usernaname, {backgroundColor: '#ffc400', borderWidth:2, borderColor:'black'}]}>
+    </TextInput>
     
     
           <TouchableHighlight 
@@ -80,7 +83,10 @@ function SignUp(props) {
               const userDoc={
                 name : username,
                 email : email,
-                password: password
+                password: password,
+                phone:phNo,
+                address:address
+        
         
                 };
               
