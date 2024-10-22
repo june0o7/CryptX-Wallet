@@ -63,7 +63,7 @@ const [t2color, setT2color]= useState('black');
       onPressOut={()=>{setPressed(false);setT2color('black')}}
       onPress={()=>{
 
-            signInWithEmailAndPassword(auth, email, password).then(()=>{ navigator.navigate('Home')}).catch((error)=>{alert("Invalid Credentials")});
+            signInWithEmailAndPassword(auth, email, password).then(()=>{console.log("Inside Main"); navigator.navigate('Main')}).catch((error)=>{alert("Invalid Credentials")});
 
       }}
       style={pressed ?styles.button2: styles.button1 } >

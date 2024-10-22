@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, StatusBar, TextInput, Button, TouchableOpacity, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, Image,StatusBar, TextInput, Button, TouchableOpacity, TouchableHighlight, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import firebase from 'firebase/compat/app';
 import app from './firebaseConfig';
@@ -12,69 +12,104 @@ import { LinearGradient } from 'expo-linear-gradient';
 function Home(props) {
 
 
-const db=getFirestore(app);
-const auth = getAuth(app);
-    
-const user=auth.currentUser;
-const uid=user.uid;
-
-const [data, setData]=useState(null);
-async function loadData(){
-
-
-      const document=doc(db, "users", uid);
-      const docSnap = await getDoc(document);
-      const data1= docSnap.data();
-      setData(data1);
-      console.log(data1.name);
-      console.log(data1.email);
-      console.log(data1.password);
-
-      
-     
-        }
-        
-        useEffect(() => {
-          loadData();
-            },[]);
-
-
     return (
-        <LinearGradient   colors={['rgba(131,58,180,1)', 'rgba(29,52,253,1)', 'rgba(252,176,69,1)']}
-        start={{ x: 0, y: 0.2 }}
-        end={{ x: 1, y: 0.8 }}
-        style={styles.background}>
+       <View style={styles.container}>
+          <Text style={{color:'black', fontWeight:'bold', fontSize:30}}>
+            Hello, Alex !
+          </Text>
+          <Text style={{color:'grey', fontSize:15, marginTop:10}}>
+            Total Balance
+          </Text>
+
+          <Text style={{color:'black', fontSize:25, marginTop:3}}>
+            $10,000.00
+          </Text>
+          <Text style={{fontWeight:'bold', padding:2, backgroundColor:'#e8e9eb', borderRadius:10, width:100, height:20, alignItems:'center', fontSize:10, color:'grey'}}>Market Growth: 4.7%</Text>
+
+          <View style={{padding:10, marginTop:10, flexDirection:'row', justifyContent:'space-evenly'}}>
+            <TouchableOpacity style={styles.button}>
+            <Image 
+                source={require('./assets/icons/uparrow.png')}
+                style={styles.image}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+            <Image 
+                source={require('./assets/icons/downarrow.png')}
+                style={styles.image}
+                />
+            </TouchableOpacity>
+            
+            <TouchableOpacity style={styles.button}>
+            <Image 
+                source={require('./assets/icons/mg.png')}
+                style={styles.image}
+                />
+            </TouchableOpacity>
+          </View>
+          <View style={styles.buttonDescription}>
+            <Text>Send</Text>
+            <Text>Receive</Text>
+            <Text>Find</Text>
+          </View>
+        <Text style={{fontWeight:'bold', padding:5 , width:70, alignItems:'center', color:'#333436', fontSize:18}}>Events</Text>
+        <ScrollView horizontal={true}
+        styles={styles.popular}>
 
 
-                    <Button title='Show Data' onPress={()=>loadData()}>
-                   
-                    </Button>
-
-                 
-
-                    {data && (<Text  style={styles.text}> Name:{data.name}</Text> )}
-                
-                {data && (<Text  style={styles.text}> Email: {data.email+" "}</Text> )} 
-                
-                {data && (<Text  style={styles.text}> Password: {data.password}</Text> )}
-                        
-                
-              
-
-             
-            </LinearGradient>
-    
-    );
-}
+        <TouchableOpacity style={{margin:10}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+           
+          
+       
+        </ScrollView>
+       </View>
+)}
 const styles = StyleSheet.create({
-    background: {
+    container: {
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
+      backgroundColor:'white',
+      padding:10,
     },
-    text: {
-      fontSize: 24,
-      color: 'white',
+
+    button:{
+      backgroundColor:'#e3dfde',
+      width:50,
+      height:50,
+      borderRadius:10,
+      justifyContent:'center',
+      alignItems:'center'
     },
+    image:{
+      width:25,
+      height:25,
+
+    },
+
+    buttonDescription:{
+      flexDirection:'row',
+      justifyContent:'space-evenly'
+    },
+    popular:{
+      flexDirection:'row',
+      height:200
+    }
+  
   });
 export default Home;
