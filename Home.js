@@ -48,37 +48,42 @@ function Home(props) {
             </TouchableOpacity>
           </View>
           <View style={styles.buttonDescription}>
-            <Text>Send</Text>
-            <Text>Receive</Text>
-            <Text>Find</Text>
+            <Text>Send </Text>
+            <Text>Receive </Text>
+            <Text>Find </Text>
           </View>
         <Text style={{fontWeight:'bold', padding:5 , width:70, alignItems:'center', color:'#333436', fontSize:18}}>Events</Text>
-        <ScrollView horizontal={true}
-        styles={styles.popular}>
-
-
-        <TouchableOpacity style={{margin:10}}>
-                <Image 
-                source={require('./assets/images/ticket.jpg')}
-                style={{width:200, height:100}}
-                />
-            </TouchableOpacity>
-            <TouchableOpacity style={{margin:10}}>
-                <Image 
-                source={require('./assets/images/ticket.jpg')}
-                style={{width:200, height:100}}
-                />
-            </TouchableOpacity>
-            <TouchableOpacity style={{margin:10}}>
-                <Image 
-                source={require('./assets/images/ticket.jpg')}
-                style={{width:200, height:100}}
-                />
-            </TouchableOpacity>
-           
-          
        
+       <View style={{style:200}}>
+        <ScrollView horizontal={true}>
+      
+
+
+        <TouchableOpacity style={{margin:10, height:110}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10, height:110}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10, height:110}}>
+                <Image 
+                source={require('./assets/images/ticket.jpg')}
+                style={{width:200, height:100}}
+                />
+            </TouchableOpacity>
+    
         </ScrollView>
+        </View>
+
+        <Text style={{fontWeight:'bold', padding:5 , width:120, alignItems:'center', color:'#333436', fontSize:18}}>Businesses </Text>
+      
+       
        </View>
 )}
 const styles = StyleSheet.create({
@@ -106,10 +111,7 @@ const styles = StyleSheet.create({
       flexDirection:'row',
       justifyContent:'space-evenly'
     },
-    popular:{
-      flexDirection:'row',
-      height:200
-    }
+  
   
   });
 export default Home;
