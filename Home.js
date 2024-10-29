@@ -106,9 +106,9 @@ function Home(props) {
         Popular
       </Text>
 
-      <View>
+      <View  style={{ backgroundColor: "#eda968", borderRadius: 20, paddingLeft: 5, paddingRight:5 }}>
         <ScrollView
-          style={{ backgroundColor: "#eda968", borderRadius: 20, padding: 4 }}
+         
           horizontal={true}
           showsHorizontalScrollIndicator={false}
         >
