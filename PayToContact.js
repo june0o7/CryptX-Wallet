@@ -59,7 +59,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rajdeep pal
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -75,7 +75,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rumpa paul
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -91,7 +91,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Riya pal
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -107,7 +107,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rangan nath
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -123,7 +123,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Subhadeep pal
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -139,7 +139,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rishav dey
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -155,7 +155,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Saikat adhikari
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -171,7 +171,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Virat pathak
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -187,7 +187,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Suman bera
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -203,7 +203,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Pratik Biswas
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -219,7 +219,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rajesh Shaw
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -235,7 +235,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Rittik pandey
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -251,7 +251,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Romit Nandi
                 </Text>
                 <Text>
                     Touch to open this contact
@@ -267,7 +267,7 @@ function PayToContact(){
 
             <View style={styles.contactInnerBox}>
                 <Text>
-                    Alex Hembrom
+                    Raman Tiwari
                 </Text>
                 <Text>
                     Touch to open this contact

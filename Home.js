@@ -31,10 +31,10 @@ function Home(props) {
   return (
     <View style={styles.container}>
       <View
-        style={{ backgroundColor: "#FFDE21", borderRadius: 20, padding: 10 }}
+        style={{ backgroundColor: "#21ffcf", borderRadius: 20, padding: 10 }}
       >
         <Text style={{ color: "black", fontWeight: "bold", fontSize: 30 }}>
-          Hello, Alex !
+          Hello, USER !
         </Text>
         <Text style={{ color: "#2c2e2e", fontSize: 15, marginTop: 10 }}>
           Total Balance
@@ -53,7 +53,7 @@ function Home(props) {
             height: 20,
             alignItems: "center",
             fontSize: 10,
-            color: "#FFDE21",
+            color: "#21ffcf",
           }}
         >
           Market Growth: 4.7%
@@ -106,7 +106,7 @@ function Home(props) {
         Popular
       </Text>
 
-      <View  style={{ backgroundColor: "#eda968", borderRadius: 20, paddingLeft: 5, paddingRight:5 }}>
+      <View  style={{ backgroundColor: "#21ffcf", borderRadius: 20, paddingLeft: 5, paddingRight:5 }}>
         <ScrollView
          
           horizontal={true}
@@ -153,7 +153,7 @@ function Home(props) {
       </Text>
       <View
         style={{
-          borderColor: "white",
+          borderColor: "black",
           borderWidth: 1,
           borderRadius: 5,
           padding: 5,
@@ -249,7 +249,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Rajdeep
             </Text>
           </View>
           </TouchableOpacity>
@@ -265,7 +265,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Rumpa
             </Text>
           </View>
           </TouchableOpacity>
@@ -282,7 +282,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Rangan Nath
             </Text>
           </View>
           </TouchableOpacity>
@@ -298,7 +298,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Shyan mandal
             </Text>
           </View>
           </TouchableOpacity>
@@ -314,7 +314,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Saptarshi Mandal
             </Text>
           </View>
           </TouchableOpacity>
@@ -330,7 +330,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Sradha
             </Text>
           </View>
           </TouchableOpacity>
@@ -346,7 +346,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Riya pal
             </Text>
           </View>
           </TouchableOpacity>
@@ -362,7 +362,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Subhadeep pal
             </Text>
           </View>
           </TouchableOpacity>
@@ -378,7 +378,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Soumik 
             </Text>
           </View>
           </TouchableOpacity>
@@ -394,7 +394,7 @@ function Home(props) {
               ellipsizeMode="tail"
               numberOfLines={1}
             >
-              Alex Hembrom
+              Rajesh patra
             </Text>
           </View>
           </TouchableOpacity>
@@ -408,12 +408,12 @@ function Home(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#2c2e2e",
+    backgroundColor: "#121212",
     padding: 10,
   },
 
   button: {
-    backgroundColor: "#FFDE21",
+    backgroundColor: "white",
     width: 50,
     height: 50,
     borderRadius: 10,

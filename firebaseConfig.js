@@ -1,3 +1,8 @@
+
+
+
+
+///////////////////////
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -7,14 +12,18 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDuh4UDayR6MlbgGjU3Y1JkjvEkxPZU93w",
-  authDomain: "codarcraft.firebaseapp.com",
-  projectId: "codarcraft",
-  storageBucket: "codarcraft.appspot.com",
-  messagingSenderId: "1065888667917",
-  appId: "1:1065888667917:web:c04b1f69b46648509e3844",
-  measurementId: "G-FEZ204YKRM"
+  apiKey: "AIzaSyDJEVS4NWXaw0WTALlq51QuGuIUFvcG4lc",
+  authDomain: "codarcraft-44f31.firebaseapp.com",
+  projectId: "codarcraft-44f31",
+  storageBucket: "codarcraft-44f31.firebasestorage.app",
+  messagingSenderId: "977360484927",
+  appId: "1:977360484927:web:b6b2aa322d6bc8b416568a",
+  measurementId: "G-S8DN19T9C5"
 };
+
+// Initialize Firebase
+
+//////////////////////
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

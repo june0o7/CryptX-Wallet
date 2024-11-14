@@ -16,7 +16,7 @@ function Main() {
     screenOptions={{
 
         drawerStyle:{
-            backgroundColor:'#FFDE21',
+            backgroundColor:'white',
             
         },
 
@@ -25,8 +25,8 @@ function Main() {
         
 
         headerStyle:{
-            backgroundColor:'#2c2e2e',
-            shadowColor:'#2c2e2e'
+            backgroundColor:'#121212',
+            shadowColor:'#121212'
         
         },
         headerTintColor: 'white',

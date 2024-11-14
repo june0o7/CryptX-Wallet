@@ -66,7 +66,7 @@ function ID(props) {
       </View>
 
       <Text style={{ color: "black", fontWeight: "bold", fontSize: 30, alignSelf:"center" }}>
-        Mr. Alex Hembrom
+        Mr. Rajdeep pal
       </Text>
      
       <View style={{flexDirection:"row", backgroundColor:'#e1e4e8', width:300, height:50, alignSelf:"center", marginTop:20, alignItems:"center", justifyContent:"center", borderRadius:20}}>

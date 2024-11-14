@@ -39,8 +39,8 @@ function SignUp(props) {
       end={{ x: 1, y: 0.8 }}
       style={styles.background}>
   
-            <Text style={styles.heading}>
-            CryptoNest
+            <Text style={styles.heading} >
+            CryptX Wallet
             </Text>
             <Text style={styles.heading2}>
             Safe, Fast, and Ready for Every Transaction
@@ -48,22 +48,22 @@ function SignUp(props) {
     
     
     
-            <TextInput placeholder=' Enter Username' value={username} onChangeText={setUsername} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
+            <TextInput placeholder='  Username' value={username} onChangeText={setUsername} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
     
           
             </TextInput>
     
-            <TextInput placeholder=' Enter Password' value={password} onChangeText={setPassword} secureTextEntry={true} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
+            <TextInput placeholder='  Password' value={password} onChangeText={setPassword} secureTextEntry={true} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
     
           
             </TextInput>
 
-            <TextInput placeholder=' Enter Email' value={email} onChangeText={setEmail} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
+            <TextInput placeholder='  Email' value={email} onChangeText={setEmail} placeholderTextColor='#a2a2a2' style={styles.usernaname}>
     
           
     </TextInput>
-    <TextInput placeholder='Enter Phone Number' value={phNo} onChangeText={setphNo}placeholderTextColor='#a2a2a2' style={styles.usernaname}></TextInput>
-    <TextInput placeholder= 'Enter Address' value={address} onChangeText={setAddress} placeholderTextcolor='#a2a2a2' style= {[styles.usernaname, {backgroundColor: '#ffc400', borderWidth:2, borderColor:'black'}]}>
+    <TextInput placeholder=' Phone Number' value={phNo} onChangeText={setphNo}placeholderTextColor='#a2a2a2' style={styles.usernaname}></TextInput>
+    <TextInput placeholder= ' Address' value={address} onChangeText={setAddress} placeholderTextcolor='#a2a2a2' style= {[styles.usernaname, {backgroundColor: 'white', borderWidth:2, borderColor:'black'}]}>
     </TextInput>
     
     <TextInput placeholder='Date of Birth' value={DOB} onChangeText={setDOB}  placeholderTextColor= '#a2a2a2' style= {[styles.usernaname, {backgroundColor: 'white', borderWidth:2, borderColor:'black'}]} ></TextInput>
@@ -121,7 +121,7 @@ function SignUp(props) {
             <Text style={styles.heading2}>Forgot Password ?</Text>
           </TouchableOpacity>
 
-          <Text style={{color:'#2f2f2d', fontWeight:'bold'}}>CoDARcraft</Text>
+          <Text style={{color:'#2f2f2d', fontWeight:'bold'}}>@version 2.0.6</Text>
             
         </LinearGradient>
        

@@ -39,10 +39,10 @@ const [t2color, setT2color]= useState('black');
     style={styles.background}>
 
         <Text style={styles.heading}>
-          CoDARcraft
+          CryptX Wallet
         </Text>
         <Text style={styles.heading2}>
-          Making your conspiracies real
+          For smooth Transaction
         </Text>
 
 
